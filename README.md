@@ -53,4 +53,14 @@ log in, then send, discard or store messages, and can manage their stored messag
 4. Use the menu to send, discard or store messages, and option 4 for stored messages.
 
 To run the unit tests, right-click each test file and choose **Test File**.
+## Message hash
+
+The hash is made from the first two digits of the message ID, a colon, the message
+number, a colon, and the first and last words of the message in capitals.
+Example: `00:0:HITONIGHT`
+## Storing and reading JSON
+
+Messages are written to `storedMessages.json` with Java's `FileWriter` and read back
+with `BufferedReader`. No external library was needed. Libraries such as Gson or
+org.json could be used instead.
 
