@@ -35,3 +35,22 @@ log in, then send, discard or store messages, and can manage their stored messag
   - d. Search for all stored messages for a particular recipient
   - e. Delete a message using its message hash
   - f. Display a report of the full details of all stored messages
+  - ## Project structure
+
+| File | Purpose |
+|------|---------|
+| `Login.java` | Registration, validation and login logic |
+| `Message.java` | Message creation, ID, hash, arrays, JSON storage and stored-message features |
+| `AppChat.java` | Main program: registration, login, QuickChat menu and Stored Messages sub-menu |
+| `MessageTest.java` | JUnit tests for Part 2 (length, recipient, hash, ID, send/discard/store) |
+| `StoredMessagesTest.java` | JUnit tests for Part 3 (arrays, longest message, search, delete, report) |
+
+## How to run
+
+1. Open the project in NetBeans.
+2. Run `AppChat.java` (right-click, then Run File).
+3. Register, log in, then enter how many messages you want to send.
+4. Use the menu to send, discard or store messages, and option 4 for stored messages.
+
+To run the unit tests, right-click each test file and choose **Test File**.
+
