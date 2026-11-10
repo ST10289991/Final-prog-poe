@@ -74,4 +74,22 @@ org.json could be used instead.
 - Punctuation (such as `?` or `!`) is removed from the first and last words when building the hash.
 - The message ID is random, so the tests read the real ID instead of using a fixed value.
 - The tests write to `storedMessages.json`, so delete the file before demonstrating the app.
+## Use of AI
 
+We used Claude (an AI assistant made by Anthropic) while working on this assignment.
+It was used to:
+
+- Explain the assignment requirements 
+- Provide starting code for the `Message` class, the QuickChat menu, the stored
+  messages features and the unit tests
+- Help find and fix errors in our code (for example, a misplaced constructor and a
+  missing closing brace in `MessageTest.java`)
+- Help write this README
+
+We ran and tested the program ourselves in NetBeans and reviewed the code.
+[Only keep the last sentence if it is true for your group.]
+
+## References
+
+- Oracle Java documentation: https://docs.oracle.com/en/java/
+- JUnit 5 user guide: https://junit.org/junit5/docs/current/user-guide/
