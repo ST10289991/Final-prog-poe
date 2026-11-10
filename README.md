@@ -63,4 +63,15 @@ Example: `00:0:HITONIGHT`
 Messages are written to `storedMessages.json` with Java's `FileWriter` and read back
 with `BufferedReader`. No external library was needed. Libraries such as Gson or
 org.json could be used instead.
+## Notes and assumptions
+
+- The brief says the recipient number must have "no more than ten characters", but the
+  test number `+27718693002` is 12 characters long. We followed the rule from Part 1
+  (+27 followed by 9 digits).
+- Test message 4 in Part 3 uses the number `0838884567`, which has no international
+  code. The unit tests create it directly, but the app would reject it if typed in.
+- The sender of each message is the username of the logged-in user.
+- Punctuation (such as `?` or `!`) is removed from the first and last words when building the hash.
+- The message ID is random, so the tests read the real ID instead of using a fixed value.
+- The tests write to `storedMessages.json`, so delete the file before demonstrating the app.
 
